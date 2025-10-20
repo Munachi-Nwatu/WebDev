@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+header h1 {
+    font-size: 30px;
+    font-weight: 600%;
+}
+nav {
+    text-decoration: none;
+    color: #777;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    display: flex;
+    flex-direction: row;
+}
+nav p {
+    padding-left: 20px;
+}
+nav :hover,
+nav :active{
+    color: blueviolet;
+}
+.about{
+    width: 90%;
+    max-width: 1100px;
+    margin-top: 3rem;
+}
+.about h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.about h2 span{
+    color: blueviolet;
+}
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 1rem;
+    border-left: 4px solid blueviolet;
+    padding-left: 1rem;
+}
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.card {
+    background: grey;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.card h3 span {
+    color: blueviolet;
+}
+.card img {
+    object-fit: cover;
+    width: 400px;
+    border-radius: 10px;
+}
+footer {
+    width: 100vw;
+    height: 24px;
+    background: linear-gradient(90deg, blueviolet, purple);
+    border-radius: 6px 6px 0 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}

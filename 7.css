@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.cu{
+    border: 1px solid whitesmoke;
+    background-color: #000;
+    justify-content: left;
+    padding: 1rem;
+    border-radius: 10px;
+}
+div header {
+    color: whitesmoke;
+}
+div p {
+    color: #777;
+}
+.cu-bu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+}
+.bu {
+    border: 3px solid whitesmoke;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.75rem 1rem; 
+    border-radius: 10px;
+    background-color: white;
+}
+
+.bu p {
+    font-weight: bold;
+    color: black;
+}
+.bu input {
+    width: 100%;
+    box-sizing: border-box;
+    color: #222;
+    background: #fff;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.bu p { grid-column: 1 / 2; }
+.bu input { grid-column: 2 / 3; }
+#fname, #lname, #email, #pnum, #mes{
+    padding: 10px 3px;
+}
+div span {
+    color: #777;
+    margin-top: 10px;
+}
+div i{
+    margin-top: 10px;
+}
+.e {
+
+    margin-top: 90px;
+}
+.special {
+    margin-top: 120px
+}
+div button {
+    padding: 10px 15px;
+    background-color: red;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+    .cu-bu{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px){
+    .cu-bu{
+        grid-template-columns: 1fr;
+    }
+}
